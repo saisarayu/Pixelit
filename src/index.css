@@ -1171,13 +1171,76 @@ p, span, a, li, blockquote, label, input, button {
   left: 150%;
 }
 
-@media (max-width: 1024px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .about-visuals-wrapper { height: 420px; margin-bottom: 20px; }
-  .visual-stack { height: 420px; max-width: 440px; margin: 0 auto; }
-  .card-main { left: 40px; }
-  .card-top-right { right: 10px; }
-  .footer-container { grid-template-columns: 1fr 1fr; }
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE SYSTEM (FLAWLESS ALIGNMENT & RESPONSIVENESS)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 7vw, 3.8rem);
+    text-align: center;
+  }
+
+  .hero-quotes {
+    border-left: none;
+    border-top: 3px solid var(--primary-blue);
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-bg-hud {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    max-width: 520px;
+    height: 320px;
+    margin-top: 40px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-quote {
+    border-left: none;
+    border-top: 3px solid var(--primary-blue);
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1199,7 +1262,156 @@ p, span, a, li, blockquote, label, input, button {
   }
   .nav-menu.active { opacity: 1; pointer-events: all; }
   .mobile-toggle { display: block; }
-  .hero-title { font-size: 2.6rem; }
-  .hero-bg-hud { width: 380px; height: 380px; right: -20%; }
-  .footer-container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .navbar {
+    padding: 8px 16px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .hero-quotes {
+    padding: 14px 16px;
+  }
+
+  .quote-item {
+    font-size: 0.95rem;
+  }
+
+  .hero-bg-hud {
+    max-width: 100%;
+    height: 240px;
+  }
+
+  .about-visuals-wrapper {
+    min-height: 340px;
+  }
+
+  .visual-stack {
+    height: 340px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .card-main {
+    width: 200px;
+    height: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+  }
+
+  .card-top-right {
+    width: 130px;
+    height: 160px;
+    right: 0px;
+    top: 0px;
+  }
+
+  .card-bottom-left {
+    width: 120px;
+    height: 150px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .value-card {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .activity-card {
+    padding: 24px 20px;
+  }
+
+  .activity-filters {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .cycle-box {
+    padding: 36px 18px;
+  }
+
+  .cycle-title {
+    font-size: 1.4rem;
+    gap: 10px;
+  }
+
+  .cycle-arrow {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-brand-col, .footer-links-col, .footer-newsletter-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    justify-content: center;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .modal-window {
+    padding: 24px 18px;
+    max-width: 94vw;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
 }

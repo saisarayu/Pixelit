@@ -70,7 +70,7 @@ export default function ActivitiesSection({ onOpenRegister }) {
             Annual <span class="text-gradient">Activities.</span>
           </h2>
           <p class="section-subtitle">
-            Hands-on learning, real-world projects, and collaborative problem-solving.
+            Hands-on learning, real-world projects, and collaborative problem-solving .
           </p>
         </div>
 
