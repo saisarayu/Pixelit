@@ -16,7 +16,6 @@ const eventsList = [
       { icon: 'fa-laptop-code text-purple', text: 'Builds & Prototypes' }
     ],
     dateText: 'September 2026',
-    btnText: 'Register Now',
     badgeIcon: 'fa-fire'
   },
   {
@@ -25,7 +24,6 @@ const eventsList = [
     badgeClass: 'badge-vintra',
     badgeText: 'Event - Vintra 2025',
     statusClass: 'status-active',
-    statusText: 'Active Season',
     title: 'Rapid Build 2K25',
     desc: 'A technical sprint where teams build working solutions in a short, high-energy format.',
     features: [
@@ -34,7 +32,6 @@ const eventsList = [
       { icon: 'fa-comments text-teal', text: 'Mentor Feedback' }
     ],
     dateText: 'Vintra 2025 Edition',
-    btnText: 'Join Event',
     badgeIcon: 'fa-bolt'
   },
   {
@@ -42,8 +39,6 @@ const eventsList = [
     category: 'euphoria',
     badgeClass: 'badge-euphoria',
     badgeText: 'Event - Euphoria 2026',
-    statusClass: 'status-upcoming',
-    statusText: 'Upcoming',
     title: 'Pitch & Build',
     desc: 'A presentation event where participants share ideas, solutions, and live prototypes.',
     features: [
@@ -52,7 +47,6 @@ const eventsList = [
       { icon: 'fa-handshake text-teal', text: 'Team Formation' }
     ],
     dateText: 'Euphoria 2026 Fest',
-    btnText: 'Pre-Register',
     badgeIcon: 'fa-crown'
   }
 ];
